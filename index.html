@@ -1,35 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт начинающего верстальщика</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scandi</title>
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-          На главную
-        </nav>
-      </header>
-      <main>
-        <article>
-          День первый. Как я забыл покормить кота
-          День второй. Как я забыл покормить кота
-          День третий. Как я забыл покормить кота
-          День четвертый. Как я забыл покормить кота
+
+  <header class="header">
+    <div class="container header__container">
+      <img src="img/logo.png" alt="логотип">
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#">О компании</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">Портфолио</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">Команда</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">Как мы работаем</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">Отзывы клиентов</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">Оставить заявку</a>
+          </li>
+        </ul>
+        <a href="tel:+79818574624">+7 (981) 857-46-24</a>
+      </nav>
+    </div>
+  </header>
   
-          Кто бы мог подумать, что семантика это так важно, мне срочно нужно было об этом поговорить.
-  
-          Взгляд упал на кота. Кот издал настойчивое «Мяу». И я понял — пришло время для первой записи в блог. И покормить кота.
-        </article>
-        <aside>
-          Здесь могла быть ваша реклама.
-        </aside>
-      </main>
-      <footer>
-        Подвал сайта
-      </footer>
+  <main>
+    <section class="hero">
+      <div class="cotainer hero__container">
+        <h1 class="hero__title">Поможем сделать вашу квартиру уютнее</h1>
+        <p class="hero__description">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
+        <a class="hero__down" href="#">Оставить заявку</a>
+      </div>
+    </section>
+  </main>
+
+
 </body>
 </html>
