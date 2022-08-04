@@ -11,7 +11,7 @@
 
   <header class="header">
     <div class="container header__container">
-      <img src="img/logo.png" alt="логотип">
+      <img src="img/logo.png" alt="логотип" width="25px" height="25px">
       <nav class="header__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -49,9 +49,9 @@
 
     <section class="about">
       <div class="container about__container">
-        <h2>О нас</h2>
+        <h2 class="section-title">О нас</h2>
         <div class="about__left">
-          <img class="about__img" src="img/about.jpg" alt="фотография с декором">
+          <img class="about__img" src="img/about.jpg" alt="фотография с декором" width="444px" height="465px">
         </div>
         <div class="about__right">
           <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
@@ -73,20 +73,18 @@
 
     <section class="portfolio">
       <div class="container">
-        <h2>Наши работы</h2>
+        <h2 class="section-title">Наши работы</h2>
         <div class="portfolio__photos">
-          <div class="portfolio__photo_main">
-            <p class="portfolio__subtitle">Квартира-студия 30 кв.м.</p>
-            <p class="portfolio__description">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
-              на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
-          </div>
-          <img src="img/work01.jpg" alt="кухня студия">
-          <img src="img/work02.jpg" alt="гостинная">
-          <img src="img/work03.jpg" alt="ванная">
+          <ul>
+            <li><img src="img/work01.jpg" alt="спальня" width="488px" height="451px"></li>
+            <li><img src="img/work02.jpg" alt="кухня студия" width="692px" height="451px"></li>
+            <li><img src="img/work03.jpg" alt="гостинная" width="692px" height="451px"></li>
+            <li><img src="img/work04.jpg" alt="ванная" width="488px" height="451px"></li>
+          </ul>
         </div>
         <div class="portfolio__else">
           <a href="#">Смотреть ещё</a>
-          <img src="img/arrowr.svg" alt="сиотреть еще работы">
+          <img src="img/arrowr.svg" alt="сиотреть еще работы" width="60px" height="16px">
         </div>
       </div>
     </section>
@@ -96,19 +94,19 @@
       <div class="container team__container">
 
         <div class="team__employees">
-          <h2>Команда</h2>
+          <h2 class="section-title">Команда</h2>
           <div class="team__employees_one">
-            <img src="img/employee01.jpg" alt="дизанер Маша">
+            <img src="img/employee01.jpg" alt="дизанер Маша" width="320px" height="253px">
             <p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
               и помогает сделать вашу квартиру красивой и уютной.</p>
           </div>
           <div class="team__employees_two">
-            <img src="img/employee02.jpg" alt="менеджер Саша">
+            <img src="img/employee02.jpg" alt="менеджер Саша" width="320px" height="253px">
             <p>С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы
               и ответит на все вопросы.</p>
           </div>
           <div class="team__employees_three">
-            <img src="img/employee03.jpg" alt="дизайнер Катя">
+            <img src="img/employee03.jpg" alt="дизайнер Катя" width="320px" height="253px">
             <p>Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как обустроить дом так, чтобы вам понравилось.</p>
           </div>
         </div>
@@ -116,13 +114,41 @@
         <div class="team__about">
           <h2>Как мы работаем</h2>
           <ul class="team__about-list">
-            <li>Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</li>
-            <li>Подбираем мебель, текстиль, аксессуары. Делаем 3D-визуализацию.</li>
-            <li>Находим нужные магазины, помогаем с доставкой и оплатой товаров.</li>
-            <li>Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей</li>
+            <li class="team__about-list_item">Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</li>
+            <li class="team__about-list_item">Подбираем мебель, текстиль, аксессуары. Делаем 3D-визуализацию.</li>
+            <li class="team__about-list_item">Находим нужные магазины, помогаем с доставкой и оплатой товаров.</li>
+            <li class="team__about-list_item">Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей</li>
           </ul>
         </div>
 
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container reviews__container">
+        <h2 class="section-title">Отзывы</h2>
+        <div class="reviews__slider">
+          <button class="button button-slider" type="button">
+            <img class="button-arrow" src="img/arrow-left.svg" alt="назад" width="32px" height="16">
+          </button>
+          <div class="reviews__content">
+            <blockquote class="reviews__blockquote">
+              <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
+              <p>Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p>
+              <p>Буду советовать и своим друзьям к вам обращаться!»</p>
+              <cite class="reviews__footer">
+                <p class="reviews__author">АННА БЕЛОВСКАЯ</p>
+              </cite>
+            </blockquote>
+          </div>
+          <ul class="reviews__list">
+            <li class="reviews__item"><img src="img/review01.jpg" alt="Квартира-студия" width="407px" height="272px"></li>
+            <li class="reviews__item"><img src="img/review02.jpg" alt="Квартира-студия" width="407px" height="272px"></li>
+          </ul>
+          <button class="button button-slider button-next" type="button">
+            <img src="/img/arrow-right.svg" alt="вперёд" width="32px" height="16">
+          </button>
+        </div>
       </div>
     </section>
 
